@@ -70,7 +70,7 @@ initial_final_vector          = seq(initial, final, by=1)
 ini_fin_denom_function        <- function(y){if (y%%denom==0) return(TRUE) else return(FALSE)}
       # Double checking the function. Should only list numbers divisible by denom)
 Filter(ini_fin_denom_function, initial_final_vector)
-      #Finding the sum, mean, and product of these numbers
+      # Finding the sum, mean, and product of these numbers
 sum(Filter(ini_fin_denom_function, initial_final_vector))
 mean(Filter(ini_fin_denom_function, initial_final_vector))
 prod(Filter(ini_fin_denom_function, initial_final_vector))
